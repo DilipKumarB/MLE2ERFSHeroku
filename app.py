@@ -50,4 +50,5 @@ def predict():
     
     return render_template('index.html', prediction_text='Resource Cost = {}'.format(output))
 
-    
+    if __name__=="__main__":
+    app.run(debug=True)
